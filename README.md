@@ -173,4 +173,8 @@ O projeto inclui um protocolo de avaliação com 6 cenários de teste documentad
 
 ---
 
+## Link do Vídeo
+ 
+[[Apresentação](https://youtu.be/YXdCkipBJY4)]
+
 *Desenvolvido como projeto de portfólio para o Lab "Construa Seu Assistente Virtual Com Inteligência Artificial" — DIO*

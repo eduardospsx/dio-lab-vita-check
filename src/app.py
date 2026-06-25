@@ -24,7 +24,12 @@ def kb_as_text(kb: dict) -> str:
         lines.append(f"- Sintomas-chave: {', '.join(c['sintomas_chave'])}")
         lines.append(f"- Sintomas de alerta: {', '.join(c['sintomas_alerta'])}")
         lines.append(f"- Urgência: {c['urgencia']}")
+        if c.get("urgencia_explicita"):
+            lines.append(f"- Regra de urgência: {c['urgencia_explicita']}")
         lines.append(f"- Orientação: {c['orientacao']}")
+        perguntas = c.get("perguntas_triagem", [])
+        if perguntas:
+            lines.append(f"- Perguntas de triagem sugeridas: {' | '.join(perguntas)}")
         lines.append("")
     legenda = kb["urgencia_legenda"]
     lines.append("## Legenda de Urgência")

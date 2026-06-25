@@ -3,34 +3,72 @@
     {
       "id": "gripe",
       "nome": "Gripe / Influenza",
-      "sintomas_chave": ["febre", "dor de cabeça", "coriza", "espirros", "cansaço", "dor no corpo", "calafrios"],
-      "sintomas_alerta": ["febre acima de 39.5", "dificuldade respiratória", "confusão mental"],
+      "sintomas_chave": [
+        "febre",
+        "dor de cabeça",
+        "coriza",
+        "espirros",
+        "cansaço",
+        "dor no corpo",
+        "calafrios"
+      ],
+      "sintomas_alerta": [
+        "febre acima de 39°C",
+        "febre que dura mais de 3 dias",
+        "dificuldade para respirar ou falta de ar",
+        "confusão mental ou sonolência excessiva",
+        "não consegue manter hidratação"
+      ],
       "urgencia": "amarelo",
-      "orientacao": "Repouso e hidratação abundante. Antitérmico (paracetamol ou ibuprofeno) se febre acima de 38.5°C. Evite automedicação com antibióticos — gripe é viral. Procure uma clínica se os sintomas não melhorarem em 3 dias ou se surgirem sintomas de alerta.",
+      "orientacao": "Gripe com febre requer atenção. Repouso e hidratação abundante são essenciais. Antitérmico (paracetamol ou ibuprofeno) se febre acima de 38.5°C. Evite antibióticos — gripe é viral. Procure farmácia ou clínica se a febre persistir por mais de 2 dias, piorar ou surgirem sintomas de alerta. IMPORTANTE: febre diferencia gripe de resfriado — sempre classifique gripe como 🟡.",
       "perguntas_triagem": [
         "A febre começou há quantos dias?",
         "Você está conseguindo beber líquidos normalmente?",
         "Tem sentido falta de ar ou dificuldade para respirar?"
-      ]
+      ],
+      "urgencia_explicita": "URGÊNCIA: AMARELO — gripe com febre SEMPRE requer orientação médica ou farmacêutica. NÃO classifique como verde se houver febre, mesmo que leve. Verde só se aplicaria a sintomas gripais SEM febre, o que caracteriza resfriado, não gripe."
     },
     {
       "id": "resfriado",
       "nome": "Resfriado Comum",
-      "sintomas_chave": ["coriza", "espirros", "garganta arranhando", "congestão nasal", "tosse leve"],
-      "sintomas_alerta": ["febre alta", "dor de ouvido intensa", "sintomas por mais de 10 dias"],
+      "sintomas_chave": [
+        "coriza",
+        "espirros",
+        "garganta arranhando",
+        "congestão nasal",
+        "tosse leve"
+      ],
+      "sintomas_alerta": [
+        "febre alta",
+        "dor de ouvido intensa",
+        "sintomas por mais de 10 dias"
+      ],
       "urgencia": "verde",
       "orientacao": "Repouso e boa hidratação. Soro nasal ajuda na congestão. Mel com limão pode aliviar a garganta. Não há necessidade de antibiótico. Procure atendimento se surgirem febre alta ou dor de ouvido.",
       "perguntas_triagem": [
         "Você tem febre junto com esses sintomas?",
         "Os sintomas estão piorando ou melhorando?",
         "Sente dor de ouvido ou pressão no rosto?"
-      ]
+      ],
+      "urgencia_explicita": "URGÊNCIA: VERDE — resfriado comum NÃO tem febre. Se o usuário mencionar febre junto com os sintomas, reclassifique para gripe (amarelo)."
     },
     {
       "id": "desidratacao",
       "nome": "Desidratação",
-      "sintomas_chave": ["boca seca", "tontura", "urina escura", "fraqueza", "dor de cabeça", "pouca urina"],
-      "sintomas_alerta": ["confusão mental", "pele sem elasticidade", "sem urinar por mais de 8 horas", "batimento cardíaco acelerado"],
+      "sintomas_chave": [
+        "boca seca",
+        "tontura",
+        "urina escura",
+        "fraqueza",
+        "dor de cabeça",
+        "pouca urina"
+      ],
+      "sintomas_alerta": [
+        "confusão mental",
+        "pele sem elasticidade",
+        "sem urinar por mais de 8 horas",
+        "batimento cardíaco acelerado"
+      ],
       "urgencia": "amarelo",
       "orientacao": "Beba água ou soro caseiro (1 litro de água + 1 colher de sopa de açúcar + 1 colher de chá de sal) em pequenos goles frequentes. Evite esforço físico. Se não conseguir manter líquidos ou apresentar sintomas de alerta, vá a uma UPA.",
       "perguntas_triagem": [
@@ -42,8 +80,20 @@
     {
       "id": "gastroenterite",
       "nome": "Gastroenterite (infecção intestinal)",
-      "sintomas_chave": ["diarreia", "vômito", "dor abdominal", "náusea", "febre baixa", "fraqueza"],
-      "sintomas_alerta": ["sangue nas fezes", "febre acima de 39°C", "vômitos por mais de 24h", "sinais de desidratação grave"],
+      "sintomas_chave": [
+        "diarreia",
+        "vômito",
+        "dor abdominal",
+        "náusea",
+        "febre baixa",
+        "fraqueza"
+      ],
+      "sintomas_alerta": [
+        "sangue nas fezes",
+        "febre acima de 39°C",
+        "vômitos por mais de 24h",
+        "sinais de desidratação grave"
+      ],
       "urgencia": "amarelo",
       "orientacao": "Prioridade é evitar desidratação. Ofereça soro de reidratação oral em pequenos goles. Dieta leve: arroz, banana, torrada. Evite laticínios e alimentos gordurosos. Procure atendimento médico se houver sangue nas fezes, febre alta ou incapacidade de manter líquidos.",
       "perguntas_triagem": [
@@ -55,8 +105,20 @@
     {
       "id": "enxaqueca",
       "nome": "Enxaqueca / Cefaleia Intensa",
-      "sintomas_chave": ["dor de cabeça intensa", "dor pulsátil", "sensibilidade à luz", "náusea", "sensibilidade ao barulho", "aura visual"],
-      "sintomas_alerta": ["dor de cabeça súbita e muito intensa (pior da vida)", "febre junto com rigidez no pescoço", "dificuldade de fala", "fraqueza em um lado do corpo"],
+      "sintomas_chave": [
+        "dor de cabeça intensa",
+        "dor pulsátil",
+        "sensibilidade à luz",
+        "náusea",
+        "sensibilidade ao barulho",
+        "aura visual"
+      ],
+      "sintomas_alerta": [
+        "dor de cabeça súbita e muito intensa (pior da vida)",
+        "febre junto com rigidez no pescoço",
+        "dificuldade de fala",
+        "fraqueza em um lado do corpo"
+      ],
       "urgencia": "amarelo",
       "orientacao": "Repouso em ambiente escuro e silencioso. Compressas frias na testa. Analgésicos como ibuprofeno ou paracetamol podem ajudar se tomados no início. Evite telas. ATENÇÃO: dor de cabeça repentina e extremamente intensa pode indicar emergência — vá imediatamente a uma UPA.",
       "perguntas_triagem": [
@@ -68,8 +130,21 @@
     {
       "id": "alergia",
       "nome": "Reação Alérgica",
-      "sintomas_chave": ["coceira", "urticária", "olhos vermelhos", "espirros", "coriza", "inchaço leve"],
-      "sintomas_alerta": ["inchaço na garganta", "dificuldade para respirar", "queda de pressão", "tontura intensa", "inchaço no rosto"],
+      "sintomas_chave": [
+        "coceira",
+        "urticária",
+        "olhos vermelhos",
+        "espirros",
+        "coriza",
+        "inchaço leve"
+      ],
+      "sintomas_alerta": [
+        "inchaço na garganta",
+        "dificuldade para respirar",
+        "queda de pressão",
+        "tontura intensa",
+        "inchaço no rosto"
+      ],
       "urgencia": "variavel",
       "orientacao": "Reações leves (coceira, urticária): anti-histamínico oral como loratadina ou cetirizina. Evite o agente causador. Se houver inchaço no rosto, dificuldade para respirar ou tontura intensa, trata-se de anafilaxia — LIGUE PARA O SAMU (192) IMEDIATAMENTE.",
       "perguntas_triagem": [
@@ -81,8 +156,19 @@
     {
       "id": "dor_lombar",
       "nome": "Dor Lombar (dor nas costas)",
-      "sintomas_chave": ["dor nas costas", "dor lombar", "dificuldade de movimentar", "rigidez", "dor ao se inclinar"],
-      "sintomas_alerta": ["dor irradiando para as pernas com formigamento", "perda de controle da bexiga ou intestino", "febre junto com dor lombar", "dor após queda ou trauma"],
+      "sintomas_chave": [
+        "dor nas costas",
+        "dor lombar",
+        "dificuldade de movimentar",
+        "rigidez",
+        "dor ao se inclinar"
+      ],
+      "sintomas_alerta": [
+        "dor irradiando para as pernas com formigamento",
+        "perda de controle da bexiga ou intestino",
+        "febre junto com dor lombar",
+        "dor após queda ou trauma"
+      ],
       "urgencia": "verde",
       "orientacao": "Repouso relativo (evite imobilidade total). Aplicar calor local por 15-20 minutos ajuda. Anti-inflamatórios como ibuprofeno se não houver contraindicação. Movimentos suaves e caminhadas curtas são benéficos. Procure médico se a dor persistir por mais de 1 semana ou surgirem sintomas de alerta.",
       "perguntas_triagem": [
@@ -94,8 +180,20 @@
     {
       "id": "ansiedade_aguda",
       "nome": "Crise de Ansiedade / Pânico",
-      "sintomas_chave": ["coração acelerado", "falta de ar", "tremores", "suor frio", "sensação de morte iminente", "tontura", "formigamento nas mãos"],
-      "sintomas_alerta": ["dor no peito irradiando para o braço", "perda de consciência", "sintomas pela primeira vez acima dos 40 anos"],
+      "sintomas_chave": [
+        "coração acelerado",
+        "falta de ar",
+        "tremores",
+        "suor frio",
+        "sensação de morte iminente",
+        "tontura",
+        "formigamento nas mãos"
+      ],
+      "sintomas_alerta": [
+        "dor no peito irradiando para o braço",
+        "perda de consciência",
+        "sintomas pela primeira vez acima dos 40 anos"
+      ],
       "urgencia": "amarelo",
       "orientacao": "Tente respiração controlada: inspire por 4 segundos, segure por 4, expire por 6. Vá a um ambiente calmo. A crise tende a passar em 10-20 minutos. Se for a primeira vez ou se houver dor no peito intensa, descarte causas cardíacas em uma UPA. Apoio psicológico é fundamental para episódios recorrentes.",
       "perguntas_triagem": [
@@ -107,8 +205,19 @@
     {
       "id": "conjuntivite",
       "nome": "Conjuntivite",
-      "sintomas_chave": ["olho vermelho", "secreção nos olhos", "coceira nos olhos", "lacrimejamento", "sensação de areia nos olhos"],
-      "sintomas_alerta": ["dor intensa no olho", "perda de visão", "sensibilidade extrema à luz", "trauma ocular recente"],
+      "sintomas_chave": [
+        "olho vermelho",
+        "secreção nos olhos",
+        "coceira nos olhos",
+        "lacrimejamento",
+        "sensação de areia nos olhos"
+      ],
+      "sintomas_alerta": [
+        "dor intensa no olho",
+        "perda de visão",
+        "sensibilidade extrema à luz",
+        "trauma ocular recente"
+      ],
       "urgencia": "verde",
       "orientacao": "Lave os olhos com soro fisiológico. Evite coçar. Não compartilhe toalhas ou fronhas. A conjuntivite viral é autolimitada (passa em 7-10 dias). A bacteriana pode precisar de colírio antibiótico — procure uma farmácia com farmacêutico ou uma clínica. Conjuntivite alérgica responde a anti-histamínico.",
       "perguntas_triagem": [
@@ -120,8 +229,20 @@
     {
       "id": "dor_peito",
       "nome": "Dor no Peito",
-      "sintomas_chave": ["dor no peito", "aperto no peito", "pressão no peito", "dor irradiando para o braço", "dor irradiando para o maxilar"],
-      "sintomas_alerta": ["dor intensa e súbita", "irradiação para braço esquerdo ou maxilar", "sudorese fria", "falta de ar", "náusea junto com dor no peito"],
+      "sintomas_chave": [
+        "dor no peito",
+        "aperto no peito",
+        "pressão no peito",
+        "dor irradiando para o braço",
+        "dor irradiando para o maxilar"
+      ],
+      "sintomas_alerta": [
+        "dor intensa e súbita",
+        "irradiação para braço esquerdo ou maxilar",
+        "sudorese fria",
+        "falta de ar",
+        "náusea junto com dor no peito"
+      ],
       "urgencia": "vermelho",
       "orientacao": "ATENÇÃO: dor no peito com irradiação para o braço, maxilar, sudorese fria ou falta de ar pode indicar infarto. LIGUE IMEDIATAMENTE PARA O SAMU (192). Não dirija. Mastigue um AAS (aspirina) 100mg se disponível e não houver alergia. Não ignore esse sintoma.",
       "perguntas_triagem": [
